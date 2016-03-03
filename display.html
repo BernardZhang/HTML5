@@ -41,6 +41,17 @@
 		ul.flex li:nth-child(2n) {
 			background-color: red;
 		}
+
+		.scale-circle {
+			width: 20vw;
+			border: 1px solid red;
+		}
+
+		.scale-circle:after {
+			display: block;
+			content: '';
+			padding-top: 100%;
+		}
 	</style>
 </head>
 <body>
@@ -56,5 +67,8 @@
 		<li>three</li>
 		<li>four</li>
 	</ul>
+
+
+	<div class="scale-circle"></div>
 </body>
 </html>
